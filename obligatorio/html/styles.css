@@ -1,0 +1,195 @@
+body 
+{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(240, 73, 17, 1);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: rgba(51, 51, 51, 1);
+}
+
+header 
+{
+    text-align: center;
+    margin-bottom: 0;
+    background: linear-gradient(90deg, rgba(139, 76, 175, 1) 0%, rgba(255, 99, 71, 1) 100%);
+    padding: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 70vw;
+}
+
+h1 
+{
+    font-size: 3em;
+    color: rgba(11, 206, 21, 1);
+}
+
+main 
+{
+    padding: 20px;
+    border-radius: 8px;
+    height: 70vh; 
+    width: 70vw; 
+    text-align: center;
+    margin-top: 10px; 
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
+                url('https://plus.unsplash.com/premium_photo-1681487870238-4a2dfddc6bcb?q=80&w=2680&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+input[type="text"] 
+{
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 10px;
+    border: 1px solid rgba(204, 204, 204, 1);
+    border-radius: 4px;
+}
+
+button 
+{
+    padding: 10px 15px;
+    background-color: rgba(76, 175, 80, 1);
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    border-radius: 4px;
+}
+
+button:hover 
+{
+    background-color: rgba(69, 160, 73, 1);
+}
+
+button:disabled 
+{
+    background-color: rgba(204, 204, 204, 1); 
+    cursor: not-allowed;
+    opacity: 0.5; 
+}
+
+ul 
+{
+    padding: 0;
+    border-radius: 8px; 
+    margin: 20px 0;
+}
+
+li 
+{
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    color: rgba(0, 0, 0, 1);
+    margin-bottom: 5px; 
+    background-color: rgba(218, 231, 36, 0.2); 
+    border: 1px solid rgba(204, 204, 204, 1); 
+    border-radius: 15px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+li:hover 
+{
+    background-color: rgba(0, 255, 0, 0.2);
+    cursor: pointer;
+    transform: scale(1.02); 
+}
+
+li.completed 
+{
+    text-decoration: line-through;
+    color: rgb(8, 218, 43);
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+li button 
+{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+li button i 
+{
+    color: rgba(255, 99, 71, 1);
+}
+
+li button:hover i 
+{
+    color: rgba(255, 0, 0, 1);
+}
+
+#pagination 
+{
+    text-align: center; 
+    margin-top: 10px;  
+}
+
+#pagination button 
+{
+    padding: 10px 15px;
+    background-color: rgba(76, 175, 80, 1);
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    border-radius: 4px;
+    margin: 0 5px; 
+}
+
+#pagination button:hover 
+{
+    background-color: rgba(69, 160, 73, 1);
+}
+
+#pagination button:disabled 
+{
+    background-color: rgba(204, 204, 204, 1); 
+    cursor: not-allowed;
+}
+
+#status-display 
+{
+    font-size: 1em;
+    margin: 0;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    color: rgba(0, 0, 0, 0.8);
+    display: inline-block;
+}
+
+#progress-container 
+{
+    width: 100%;
+    background-color: rgba(204, 204, 204, 0.5);
+    border-radius: 8px;
+    height: 30px;
+    position: relative;
+    margin: 10px 0;
+}
+
+#progress-bar 
+{
+    height: 100%;
+    background: linear-gradient(90deg, rgba(76, 175, 80, 1) 0%, rgba(204, 204, 204, 0.5) 0%);
+    width: 0%;
+    border-radius: 8px;
+    transition: width 0.5s ease-in-out, background 0.5s ease-in-out;
+}
+#progress-text 
+{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+}
+
+
